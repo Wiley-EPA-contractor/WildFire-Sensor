@@ -1,0 +1,6 @@
+~~~~~~Instructions for replicating Wildfire deployment~~~~~~
+1. Install node-red for Raspberry Pi zero W :  https://nodered.org/docs/getting-started/raspberrypi#autostart-on-boot
+2. Set up hostapd to enable RPi hosting for Purple air to connect to: https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md
+3. Set up your username and password for the above network: example--> SSID name: Wildfire,  Password: purpleair
+4. Go to: http://www.purpleair.com/configure 
+5. connect to your Raspberry pi network: ***note*** when directly connecting to the Rpi, the variable names change slightly from accessing direct JSON data off of the Purple air website.  This file with the appropriate variable names is saved and called: PurpleAirLocal.
