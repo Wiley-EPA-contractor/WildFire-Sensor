@@ -1,1 +1,0 @@
-The ID is 7872. You can access JSON data at https://www.purpleair.com/json?show=7872 or https://www.purpleair.com/data.json?show=7872.
