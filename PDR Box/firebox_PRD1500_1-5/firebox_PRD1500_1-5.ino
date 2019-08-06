@@ -240,8 +240,8 @@ Serial.print(inByte);
 void pdr1500()
 {
  PDRSerial.println("O");  // shows that output is beginning
- if(first_run < 20){ // let bad data clear out, run for 10 samples and then start collecting data points.
- delay (100);
+ if(first_run < 30){ // let bad data clear out, run for 10 samples and then start collecting data points.
+ delay (1000);
  first_run++;
  
  }
@@ -357,18 +357,18 @@ void logger()
    if(filename){
      VDIPSerial.print("CLF ");
     VDIPSerial.print(filename);
-   VDIPSerial.println();
+   VDIPSerial.print("\r");
     VDIPSerial.print("OPW ");
     VDIPSerial.print(filename);    
-   VDIPSerial.println();
+   VDIPSerial.print("\r");
     VDIPSerial.print("WRF ");
     VDIPSerial.print(noOfChars);
-   VDIPSerial.println();
+   VDIPSerial.print("\r");
     VDIPSerial.println(payload);
     //VDIPSerial.print('\n');
     VDIPSerial.print("CLF ");
     VDIPSerial.print(filename);
-   VDIPSerial.println();
+   VDIPSerial.print("\r");
    }
    else{
      Serial.println("error opening USB file");
