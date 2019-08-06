@@ -1,1 +1,1 @@
-This is the folderfor Amara's PDR sampler box.
+This is the folder for Amara's PDR sampler box.
