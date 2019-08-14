@@ -169,7 +169,8 @@ void loop() {
     c=GPS.read();
     }   
     GPS.parse(GPS.lastNMEA()); //Parse that last good NMEA sentence
-    NMEA1=GPS.lastNMEA();
+    NMEA1=GPS.lastNMEA();  //this should be cleared by this statement. 
+    // other idea is that lastNMEA is getting full.
   
   // Wait for command from base station
   int i = 0;
@@ -469,6 +470,7 @@ void logger()
     Serial.println("error opening datalog file");
     PDRByte = "";
   }
+  NMEA1 ="";
 }
 
 //RTC subroutine
